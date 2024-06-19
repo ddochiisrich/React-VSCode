@@ -1,11 +1,13 @@
 import './App.css';
-import { WelcomeClass, WelcomeFunction } from "./components/welcome.js"
+import * as JSX from "./jsx/JSXBase02.js"
 
 function App() {
   return (
     <div className="App">
-      <WelcomeClass name="React Class"/>
-      <WelcomeFunction name="React Function" />
+      <JSX.Expression01 />  
+      <JSX.Expression02 />      
+      <JSX.Expression03 /> 
+      <JSX.Expression04 /> 
     </div>
   );
 }
