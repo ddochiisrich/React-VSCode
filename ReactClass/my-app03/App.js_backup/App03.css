@@ -1,0 +1,12 @@
+.parent {
+  width: 400px;
+  margin: 30px;
+  padding: 20px;
+  border: 1px solid red;
+}
+.header {
+  margin: 20px;
+}
+.footer {
+  margin: 20px;
+}

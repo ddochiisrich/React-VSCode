@@ -1,0 +1,10 @@
+.App{
+  padding: 10px;
+}
+
+.area {
+  width: 300px;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid blue;
+}
