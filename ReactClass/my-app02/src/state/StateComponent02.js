@@ -2,20 +2,18 @@ import React from 'react';
 
 function StateComponent02(props) {
 
-  const state = React.useState();
-  console.log(state);
+  const [num, setNum] = React.useState(0);
 
-  let num = 0;
   function updateNum() {
-    num += 1;
+    setNum(num + 1);
     console.log(num);
   }
 
   return (
     <div className="area">
-      <h3> { num } </h3>
+      <h3> You clicked { num }  times</h3>
       <button onClick={ updateNum }>{ props.msg }</button>
     </div>
   );
 }
-export default StateComponent01;
+export default StateComponent02;

@@ -1,10 +1,10 @@
 import './App.css';
-import Effect02 from "./effect/EffectComponent02";
+import State02 from "./state/StateComponent02";
 
 function App() {
   return (
     <div className="App">
-     <Effect02 name="John" />
+     <State02 msg="click me!🔥" />
     </div>
   );
 }

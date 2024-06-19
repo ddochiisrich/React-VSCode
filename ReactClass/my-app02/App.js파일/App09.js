@@ -1,10 +1,10 @@
 import './App.css';
-import Effect02 from "./effect/EffectComponent02";
+import Effect01 from "./effect/EffectComponent01";
 
 function App() {
   return (
     <div className="App">
-     <Effect02 name="John" />
+     <Effect01 name="John" />
     </div>
   );
 }
