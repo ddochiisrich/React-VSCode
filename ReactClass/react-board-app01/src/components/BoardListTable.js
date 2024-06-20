@@ -12,7 +12,7 @@ function BoardListTable({bList}) {
         </thead>
         <tbody>
           {
-            bList.map((board) => (
+            bList.length > 0 ? bList.map((board) => (
               <tr key={board.no}>
                 <td>{board.no}</td>
                 <td>{board.title}</td>
@@ -20,7 +20,10 @@ function BoardListTable({bList}) {
                 <td>{board.reg_date}</td>
                 <td>{board.read_count}</td>
               </tr>
-            ))
+            )) :
+            (<tr>
+              <td colSpan="5" className="text-center"> 게시글이 존재하지 않는다 이말이야!!!!!!!!!!!!!!! </td>
+            </tr>)
           }
         </tbody>
       </table>
