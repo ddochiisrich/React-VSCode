@@ -51,13 +51,13 @@ nunjucks.configure('views', {
 // Credentials란 쿠키나 Authorization 인증 헤더 또는 TLS Client Certificates
 // (증명서)와 같은 자격 인증 정보를 의미하며 요청과 응답에서 쿠키를 허용하려면
 // 아래와 같이 credentials 값을 true로 설정하면 된다.
-/*
+
 app.use(cors({
   origin: ["http://localhost:3000", "http://127.0.0.1:3000"], 
   credentials: true,
   optionsSuccessStatus: 200, // 응답 상태 200으로 설정
 }));
-*/
+
 
 //#######################################################################################
 // JSON 응답 라우터 시작
