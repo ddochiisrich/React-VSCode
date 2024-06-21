@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function BoardListTable({bList}) {
   return (
     <table className="table">
@@ -15,7 +17,7 @@ function BoardListTable({bList}) {
             bList.length > 0 ? bList.map((board) => (
               <tr key={board.no}>
                 <td>{board.no}</td>
-                <td>{board.title}</td>
+                <td><Link to={ `/boardDetail?no=${ board.no }` }>{board.title}</Link></td>
                 <td>{board.writer}</td>
                 <td>{board.reg_date}</td>
                 <td>{board.read_count}</td>

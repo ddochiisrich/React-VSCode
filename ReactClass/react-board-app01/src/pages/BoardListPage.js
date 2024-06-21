@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -47,7 +48,7 @@ const BoardListPage = () => {
 					</form>  		
 					<div className="row">
 						<div className="col text-end">
-							<a  className="btn btn-outline-success">글쓰기</a>
+							<Link to="/boardWrite" className="btn btn-outline-success">글쓰기</Link>
 						</div>
 					</div>
 					<div className="row my-3">  			
