@@ -1,4 +1,6 @@
-<div className="row my-5" id="global-content">
+export default function NotFoundPage(){
+  return(
+    <div className="row my-5" id="global-content">
 				<div className="col-10 offset-1">
 					<form name="checkForm" id="checkForm">
 						<input type="hidden" name="no" id="no" />
@@ -16,3 +18,5 @@
           </div>
         </div>
       </div>
+  )
+}

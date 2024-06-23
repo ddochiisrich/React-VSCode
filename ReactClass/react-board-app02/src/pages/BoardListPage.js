@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import BoardListTable from '../components/BoardListTable.js';
+import { Link } from 'react-router-dom';
 
 function BoardListPage() {
   const [boardList, setBoardList] = useState([]);
@@ -46,9 +47,7 @@ function BoardListPage() {
           </form>
           <div className="row">
             <div className="col text-end">
-              <a href="#" className="btn btn-outline-success">
-                글쓰기
-              </a>
+              <Link to="/boardWrite" className="btn btn-outline-success">글쓰기</Link>
             </div>
           </div>
           <div className="row my-3">

@@ -1,41 +1,43 @@
+import { Link } from 'react-router-dom';
+
 export default function Header(){
   return(
     <>
       {/* <!-- header  --> */}
       <div className="row border-bottom border-primary">
         <div className="col-4">
-          <p>
+          <Link to="/">
             <img src="https://via.placeholder.com/200x100" alt="placeholder" />
-          </p>
+          </Link>
         </div>
         <div className="col-8">
           <div className="row">
             <div className="col">
               <ul className="nav justify-content-end">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="#">
                     로그인
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="#">
                     게시 글 리스트
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="#">
                     회원가입
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="#">
                     주문/배송조회
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="#">
                     고객센터
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
