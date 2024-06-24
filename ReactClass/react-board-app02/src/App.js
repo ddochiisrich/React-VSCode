@@ -19,7 +19,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={ <BoardListPage /> } />
-          <Route path="/boardList" element={< boardListPage />} />
+          <Route path="/boardList" element={< BoardListPage />} />
           <Route path="/boardDetail" element={< BoardDetailPage />} />
           <Route path="/boardWrite" element={< BoardWriteFormPage />} />
           <Route path="/boardUpdate" element={< BoardUpdateFormPage />} />

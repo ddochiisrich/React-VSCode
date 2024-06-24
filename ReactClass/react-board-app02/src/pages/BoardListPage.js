@@ -52,28 +52,7 @@ function BoardListPage() {
           </div>
           <div className="row my-3">
             <div className="col">
-              <table className="table">
-                <thead>
-                  <tr className="table-dark">
-                    <th>NO</th>
-                    <th>제목</th>
-                    <th>작성자</th>
-                    <th>작성일</th>
-                    <th>조회수</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {boardList.map((board, index) => (
-                    <tr key={index}>
-                      <td>{board.no}</td>
-                      <td>{board.title}</td>
-                      <td>{board.writer}</td>
-                      <td>{board.reg_date}</td>
-                      <td>{board.read_count}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <BoardListTable bList={boardList}/>
             </div>
           </div>
         </div>
